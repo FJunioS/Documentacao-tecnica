@@ -1,116 +1,324 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>HTML: Documentação Técnica</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <title>HTML: Documentação Técnica</title>
-</head>
+	<body class="container">
+		<!-- --------------------------------------------------------------- -->
+		<!--                     Barra de navegação lateral                  -->
+		<!-- --------------------------------------------------------------- -->
 
-<body class="container">
+		<nav id="navbar">
+			<header>HTML DOCUMENTAÇÃO</header>
+			<ul>
+				<li><a id="nav-link" href="#o_que_e_html"> O que é HTML? </a></li>
+				<li><a id="nav-link" href="#introducao"> Introdução </a></li>
+				<li><a id="nav-link" href="#raiz_principal"> Raiz principal </a></li>
+				<li><a id="nav-link" href="#metadados"> Metadados dos documentos </a></li>
+				<li><a id="nav-link" href="#secao_de_conteudo"> Seção de Conteúdo. </a></li>
+				<li><a id="nav-link" href="#conteudo_textual"> Conteúdo Textual </a></li>
+				<li>
+					<a id="nav-link" href="#img_cont">
+						Imagens, Multimídia e Conteúdos Embutidos.
+					</a>
+				</li>
+				<li>
+					<a id="nav-link" href="#scripts"> <em>Scripts</em> </a>
+				</li>
+				<li><a id="nav-link" href="#formularios"> Formulários </a></li>
+                <li><a id="nav-link" href="#referencia"> Referência </a></li>
+                <li id="topo"> <a href="#o_que_e_html">Voltar ao Topo</a></li>
+			</ul>
+		</nav>
 
-    <!-- --------------------------------------------------------------- -->
-    <!--                     Barra de navegação lateral                  -->
-    <!-- --------------------------------------------------------------- -->
+		<!-- =================================================================== -->
+		<!--                           Conteúdo da página                          -->
+		<!-- =================================================================== -->
 
-    <nav id="navbar">
-        <header>HTML DOCUMENTAÇÃO</header>
-        <ul>
+		<main id="main-doc">
+			<section id="o_que_e_html" class="main-section">
+				<article>
+					<header class="first-child">O que é HTML?</header>
+					<p>
+						HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico
+						da web. Define o significado e a estrutura do conteúdo da web. Outras
+						tecnologias além do HTML geralmente são usadas para descrever a
+						aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de
+						uma página da web.
+					</p>
+					<p>
+						"Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja
+						dentro de um único site ou entre sites. Links são um aspecto fundamental da
+						web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por
+						outras pessoas, você se torna um participante ativo na world wide web.
+					</p>
+				</article>
+			</section>
 
-            <li><a id="nav-link" href="#o_que_e_html"> O que é HTML? </a></li>
-            <li><a id="nav-link" href="#introducao"> Introdução </a></li>
-            <li><a id="nav-link" href="#raiz_principal"> Raiz principal </a></li>
-            <li><a id="nav-link" href="#metadados"> Metadados dos documentos </a></li>
-            <li><a id="nav-link" href="#secao_de_conteudo"> Seção de Conteúdo. </a></li>
-            <li><a id="nav-link" href="#conteudo_textual"> Conteúdo Textual </a></li>
-            <li><a id="nav-link" href="#img_cont"> Imagens, Multimídia e Conteúdos Embutidos. </a></li>
-            <li><a id="nav-link" href="#scripts"> <em>Scripts</em> </a></li>
-            <li><a id="nav-link" href="#formularios"> Formulários </a></li>
-            <li><a id="nav-link" href="#referencia"> Referência </a></li>
+			<section id="introducao" class="main-section">
+				<article>
+					<header>Introdução</header>
+					<p>
+						O HTML usa "Marcação" para anotar texto, imagem e outros conteúdos para
+						exibição em um navegador da&nbsp; Web. A marcação HTML inclui "elementos"
+						especiais, como:&nbsp; <p class="mono">&nbsp; &lt;head&gt; , &lt;title&gt;, &lt;body>, &lt;header> ,
+						&lt;footer> , &lt;article> , &lt;section> , &lt;p> , &lt;div> , &lt;span>,
+						&lt;img>, &lt;aside>, &lt;audio>, &lt;canvas> , &lt;datalist> , &lt;details> ,
+						&lt;embed> , &lt;nav> , &lt;output>, &lt;progress>, &lt;video>, &lt;ul>,
+						&lt;ol>, &lt;li> </p>&nbsp; e muitos outros.
+                    </p>
+                    <p>
+                        Um elemento HTML é separado de outro texto em um documento por "tags", que consistem no nome
+                         do elemento entre "<" e ">". O nome de um elemento dentro de uma tag é insensível a maiúsculas
+                          e minúsculas. Isto é, pode ser escrito em maiúsculas, minúsculas ou um mistura.
+                           Por exemplo, a tag &lt;title> pode ser escrita
+                          como &lt;Title>, &lt;TITLE> ou de qualquer outra forma.
+                    </p>
+				</article>
+			</section>
 
-        </ul>
-    </nav>
+			<section id="raiz_principal" class="main-section">
+				<article>
+					<header>Raíz principal <em> ou Main Root</em></header>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="element" scope="col">Elemento</th>
+                                <th class="description" scope="col">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <td class="element" style="vertical-align: top;">
+                                &lt;html>
+                            </td >
+                            <td class="description">
+                                O <strong>elemento <code>&lt;html></code> do  HTML</strong>  é responsável por contar todo o documento HTML, todos os outros elementos são descendentes deste.
+                            </td>
+                        </tbody>
+                    </table>
+				</article>
+			</section>
 
-    <!-- =================================================================== -->
-    <!--                           Conteúdo da página                          -->
-    <!-- =================================================================== -->
+			<section id="metadados" class="main-section">
+				<article>
+					<header>Metadados dos Documentos</header>
+                    <p>Metadado contém informações sobre a página. Isso inclui informação sobre estilos, <em>scripts</em>
+                    e dados para ajudar os <em>softwares</em> (Motores de pesquisa, navegadores, etc.) que  usam e renderizam a página. 
+                Metadados para estilos e <em>scripts</em> podem ser definidos dentro da pagina ou ligação para outro arquivo que contem as informações </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="element" scope="col">Elemento</th>
+                            <th class="description" scope="col">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td class="element" style="vertical-align: top;">
+                            &lt;base>
+                        </td >
+                        <td class="description">
+                            O <strong>elemento <code>&lt;base></code> do  HTML</strong>   especifica a URL base para usar em todos as URL relacionadas no documento.  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="element" style="vertical-align: top;">
+                            &lt;head>
+                        </td >
+                        <td class="description">
+                            O <strong>elemento <code>&lt;head></code> do  HTML</strong> contem os metadados
+                             do documentos, como seu título, scripts e <em>CSS</em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="element" style="vertical-align: top;">
+                            &lt;link>
+                        </td >
+                        <td class="description">
+                            O <strong>elemento de ligação com recurso externo <code>&lt;
+                                link></code> do  HTML</strong> especifica relações entre o atual documento e um recurso 
+                                externo. Este elemente é muito comum para ligar com o CSS, mas também pode ser
+                                 usado para estabelecer os ícones dos sites  (tanto <em><a href="https://pt.wikipedia.org/wiki/
+                                    Favicon">favicon</a></em> quando ícones para tela inicial
+                                     e aplicativos em dispositivos móveis ) além de outras coisas.    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="element" style="vertical-align: top;">
+                            &lt;meta>
+                        </td >
+                        
+                        <td class="description">
+                            O <strong>elemento <code>&lt;meta></code> do  HTML</strong>  representa os metadados que não podem ser
+                            representados por outros meta-relacionados elementos do HTML, como <code> &lt;base>, &lt;link>, &lt;script>, &lt;style>,  ou &lt;title>.  </code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="element" style="vertical-align: top;">
+                            &lt;style>
+                        </td >
+                        <td class="description">
+                            O <strong>elemento <code>&lt;style></code> do  HTML</strong> contém informações de estilo para um documento, ou parte dele.  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="element" style="vertical-align: top;">
+                            &lt;title>
+                        
+                        </td >
+                        <td class="description">
+                            O <strong>elemento <code>&lt;title></code> do  HTML</strong> define o título do documento que é mostrado na barra de título do navegador ou em uma aba de uma página.  
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+				</article>
+			</section>
 
+			<section id="secao_de_conteudo" class="main-section">
+				<article>
+					<header>Seção de Conteúdo</header>
+                    <p>Antes de irmos para a seção de conteúdo, temos que falar sobra raiz da seção: <code>&lt;body></code> </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="element" scope="col">Elemento</th>
+                                <th class="description" scope="col">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <td class="element" style="vertical-align: top;">
+                                &lt;body>
+                            </td >
+                            <td class="description">
+                                O <strong>elemento <code>&lt;body></code> do  HTML</strong> representa o conteúdo de um documento HTML. Pode existir apenas um elemento <code> &lt;body> </code> em todo o documento
+                            </td>
+                        </tbody>
+                    </table>
 
-    <main id="main-doc">
+                <p>Com o elemento <em>body</em> esclarecido, podemos dizer que os elementos da seção de conteudo te permite organizar o conteúdo do documento em partes lógicas. <br> Use os
+                     elementos da seleção  para criar partes entre o conteúdo da página, incluindo o   cabeçario (<em>header</em>) e rodapé (<em>footer</em>), e elementos para poder identificar seções do conteúdo. </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="element-3" scope="col">Elemento</th>
+                                <th class="description" scope="col">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td class="element-3" style="vertical-align: top;">
+                                &lt;adress>
+                            </td >
+                            <td class="description">
+                                O <strong>elemento <code>&lt;base></code> do  HTML</strong>   especifica a URL base para usar em todos as URL relacionadas no documento.  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="element-3" style="vertical-align: top;">
+                                &lt;article>
+                            </td >
+                            <td class="description">
+                                O <strong>elemento <code>&lt;head></code> do  HTML</strong> representa uma composição de conteúdo próprio em um documento, página,
+                                 aplicação, ou site, em que a intenção é de ser independentemente distribuível ou reusavel.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="element-3" style="vertical-align: top;">
+                                &lt;aside>
+                            </td >
+                            <td class="description">
+                                O <strong>elemento <code>&lt;
+                                    aside></code> do  HTML</strong> representa uma porção do documento em que o conteudo é indiretamente relacionado com o conteúdo principal do documento.     
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="element-3" style="vertical-align: top;">
+                                &lt;footer>
+                            </td >
+                            
+                            <td class="description">
+                                O <strong>elemento <code>&lt;footer></code> do  HTML</strong>  representa o rodapé do elemento mais perto da seção de conteudo ou seção da raiz
+                                Um rodapé normalmente contém informações sobre o autor da seção, dados de direitos autorais ou links relacionado com o documento.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="element-3" style="vertical-align: top;">
+                                &lt;header>
+                            </td >
+                            <td class="description">
+                                O <strong>elemento <code>&lt;header></code> do  HTML</strong> representa uma introdução ao conteudo, normalmente um grupo de introdução ou ajuda de navegação. Pode conter alguns elementos do   cabeçario, como logo, formulário de busca, nome do autor, e outros elementos.  
+                            </td>
+                        </tr>
+                        <tr>
 
-        <section id="o_que_e_html" class="main-section">
-            <article>
-                <p> HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o
-                    significado
-                    e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para
-                    descrever a
-                    aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.
+                        <tr>
+                            <td class="element-3" style="vertical-align:unset;">
+                                &lt;h1>, &lt;h2>, &lt;h3>, &lt;h4>, &lt;h5>, &lt;h6>. 
+                            
+                            </td >
+                            <td class="description">
+                                O <strong>elemento <code>&lt;h1> - &lt;h6></code> do  HTML</strong> representa seis níveis da seção do   cabeçario. &lt;h1> é o maior nível da seção, e &lt;h6> é o menor.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="element-3" style="vertical-align:unset;">
+                                &lt;hgroup>. 
+                            
+                            </td >
+                            <td class="description">
+                                O <strong>elemento <code>&lt;hgroup></code> do  HTML</strong> representa um cabeçariode vários níveis para uma seção de um documento. Ele junta o conjunto do &lt;h1> até o &lt;h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="element-3" style="vertical-align:unset;">
+                                &lt;main> 
+                            
+                            </td >
+                            <td class="description">
+                                O <strong>elemento <code>&lt;main></code> do  HTML</strong> represente o conteúdo dominante do &lt;body> de um documento. O conteudo principal da tag &lt;main> consiste em falar sobre o assunto principal de um tópico, ou a funcionalidade principal de uma aplicação.  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="element-3" style="vertical-align:unset;">
+                                &lt;nav> 
+                            
+                            </td >
+                            <td class="description">
+                                O <strong>elemento <code>&lt;nav></code> do  HTML</strong> representa uma seção da página onde a proposta é prover links de navegação, tanto para o próprio documento quanto para outros. Exemplos comuns da seção de navegação são os menus, tabelas de conteudos ou índices.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="element-3" style="vertical-align:unset;">
+                                &lt;section> 
+                            
+                            </td >
+                            <td class="description">
+                                O <strong>elemento <code>&lt;section></code> do  HTML</strong> representa uma seção independente - a qual não precisa ter uma semântica mais específica à ela.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+				</article>
+			</section>
+			<section id="referencia" class="main-section">
+				<article>
+					<header>Referências</header>
+					<p>
+						Referência:
+						<a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN</a>.
+					</p>
+				</article>
+			</section>
+		</main>
 
-                    <code> "Hipertexto" </code> refere-se aos links que conectam páginas da Web entre si, seja dentro de
-                    um
-                    único site ou
-                    entre
-                    sites. Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a
-                    páginas
-                    criadas por outras pessoas, você se torna um participante ativo na world wide web.
-                </p>
-            </article>
-        </section>
+		<!-- ---------------------------- Scripts --------------------------------- -->
 
-        <section id="introducao" class="main-section">
-            <article></article>
-        </section>
-
-        <section id="raiz_principal" class="main-section">
-            <article></article>
-
-        </section>
-
-        <section id="metadados" class="main-section">
-            <article></article>
-
-        </section>
-
-        <section id="secao_de_conteudo" class="main-section">
-            <article></article>
-
-        </section>
-
-        <section id="conteudo_textual" class="main-section">
-            <article></article>
-
-        </section>
-
-        <section id="img_cont" class="main-section">
-            <article></article>
-
-        </section>
-
-        <section id="scripts" class="main-section">
-            <article></article>
-
-        </section>
-
-        <section id="formularios" class="main-section">
-            <article></article>
-
-        </section>
-
-        <section id="referencia" class="main-section">
-            <article></article>
-
-
-            <p> Referência: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN</a>.</p>
-
-        </section>
-
-    </main>
-
-    <!-- ---------------------------- Scripts --------------------------------- -->
-
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
-
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</body>
 </html>

@@ -1,48 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:500,700&display=swap');
+
 * {
-    box-sizing: border-box;
-    margin: 0;
+	box-sizing: border-box;
+	margin: 0;
 }
 
+/* ========================================================================== */
+/* Formatação do texto */
+/* ========================================================================== */
+
+li,
+h2,
+p {
+	font-family: Arial, Helvetica, sans-serif;
+}
 header {
-    /* font-size: 200px; */
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+	font-family: 'Zilla Slab', Serif;
+	font-weight: 700;
+	height: auto;
+}
+/* ========================================================================== */
+/*  */
+/* ========================================================================== */
+#main-doc header:not(.first-child) {
+	margin: 40px 0 20px 0;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 6fr;
+	display: grid;
+	grid-template-columns: 1fr 6fr;
+	grid-template-rows: 1fr;
 }
-
+nav {
+	position: sticky;
+}
 ul {
-    padding: 0;
-    /* padding-right: 40px; */
-    list-style: none;
-    text-decoration: none;
-
+	padding: 0;
+	/* padding-right: 40px; */
+	list-style: none;
+	text-decoration: none;
+	/* width: 240px; */
 }
 
 li,
 header {
-    position: relative;
-    padding-left: 10px;
-    left: 0;
-    font-size: 16px;
-    padding: 1rem;
-    border-top: solid 1px #000;
-    display: flex;
-    height: auto;
-    align-items: center;
+	position: relative;
+	padding-left: 10px;
+	left: 0;
+	font-size: 16px;
+	padding: 0.5rem;
+	border-top: solid 1px #000;
+	display: flex;
+	height: auto;
+	align-items: center;
+}
+
+#main-doc {
+	border-left: solid 4px #b8b8b8;
 }
 
 a:link,
 a:visited {
-    color: #000;
-    text-decoration: none;
-
+	color: #000;
+	text-decoration: none;
 }
 
-li:nth-child(even) {
+/* li:nth-child(even) {
     background-color: #b8b8b8;
+} */
+
+#main-doc header {
+	padding: 20px 0;
+	text-indent: 2em;
+	font-size: 2em;
+}
+p {
+	width: 80vw;
+	padding: 0 20px 20px 20px;
+	line-height: 1.5rem;
+	text-indent: 1rem;
+}
+#main-doc header em {
+	margin: 0;
+	color: #808080;
+	font-weight: 100;
+}
+.mono {
+	font-family: monospace;
+	/* background-color: #b8b8b8; */
+	display: block;
+	margin-left: 1rem;
+}
+#topo {
+	position: absolute;
+	bottom: 0;
+	width: 270px;
+	text-align: center;
+	border: none;
+	font-family: 'Zilla Slab', serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	left: 4rem;
+}
+/* ========================================================================== */
+/* Configurações da tabela */
+/* ========================================================================== */
+table {
+	margin: 0 0 0 20px;
+	border-collapse: collapse;
+	width: 80%;
+}
+table,
+th,
+td {
+	padding: 10px;
+}
+tr {
+	border-top: solid 5px rgba(11, 6, 27, 0.212);
+	border-radius: 10%;
+}
+thead {
+	display: table-header-group;
+	vertical-align: middle;
+	font-size: 13px;
+	font-family: 'Zilla Slab', serif;
+	background-color: rgb(127, 141, 200);
+}
+tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	background-color: rgb(205, 248, 255);
+}
+.element {
+	padding-right: 10px;
+	text-align: center;
+}
+.description {
+	border-left: solid 5px rgba(11, 6, 27, 0.212);
+	text-align: left;
+	padding-left: 10px;
+}
+.element-3 {
+	width: 13%;
+	text-align: center;
 }
