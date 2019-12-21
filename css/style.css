@@ -92,8 +92,8 @@ p {
 	margin-left: 1rem;
 }
 #topo {
-	position: absolute;
-	bottom: 0;
+	position: fixed;
+	bottom: 5rem;
 	width: 270px;
 	text-align: center;
 	border: none;
