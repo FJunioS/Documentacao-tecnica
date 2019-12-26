@@ -144,3 +144,41 @@ tbody {
 	width: 13%;
 	text-align: center;
 }
+@media (max-width: 600px) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr;
+		/* grid-template-rows: 0.3fr 6fr; */
+		text-align: center;
+		width: 100%;
+		margin: auto;
+	}
+	#topo {
+		display: none;
+	}
+	header {
+		display: grid;
+		place-items: center;
+		padding: 0;
+		margin: 0 auto;
+		width: 90%;
+	}
+	#navbar header {
+		display: grid;
+		place-items: center;
+		font-size: 1.5em;
+	}
+	article {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	p {
+		margin: 0;
+		width: 100%;
+	}
+	.mono {
+		padding: 0;
+		width: 85%;
+	}
+}
